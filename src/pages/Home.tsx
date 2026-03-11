@@ -3,80 +3,80 @@ import { Link } from 'react-router-dom'
 const products = [
   {
     id: 1,
-    name: 'Thermal Rolls',
-    desc: 'High-quality thermal paper rolls for POS systems, ATMs, receipts, and more. Available in all standard widths.',
+    name: 'Термални ролни',
+    desc: 'Висококвалитетни термални хартиени ролни за POS системи, банкомати, сметки и уште. Достапни во сите стандардни ширини.',
     icon: '🧻',
   },
   {
     id: 2,
-    name: 'Offset Print Paper',
-    desc: 'Premium offset paper for professional printing. Excellent color reproduction and smooth surface finish.',
+    name: 'Офсет хартија за печатење',
+    desc: 'Премиум офсет хартија за професионално печатење. Одлична репродукција на бои и мазна завршна обработка.',
     icon: '📄',
   },
   {
     id: 3,
-    name: 'Copy Paper',
-    desc: 'Multipurpose copy paper for everyday office use. Consistent brightness and jam-free performance.',
+    name: 'Хартија за копирање',
+    desc: 'Повеќенаменска хартија за секојдневна канцелариска употреба. Постојана осветленост и работа без заглавување.',
     icon: '📋',
   },
   {
     id: 4,
-    name: 'Specialty Rolls',
-    desc: 'Custom-width and specialty thermal rolls for medical, industrial, and label printing applications.',
+    name: 'Специјални ролни',
+    desc: 'Термални ролни со прилагодена ширина за медицински, индустриски и апликации за печатење на налепници.',
     icon: '🔖',
   },
 ]
 
 const stats = [
-  { value: '20+', label: 'Years of Experience' },
-  { value: '500+', label: 'Happy Clients' },
-  { value: '50+', label: 'Product Variants' },
-  { value: '99%', label: 'On-Time Delivery' },
+  { value: '20+', label: 'Години искуство' },
+  { value: '500+', label: 'Задоволни клиенти' },
+  { value: '50+', label: 'Варијанти на производи' },
+  { value: '99%', label: 'Навремена испорака' },
 ]
 
 export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-screen bg-[#1a3a5c] flex items-center overflow-hidden">
+      <section className="relative min-h-screen bg-[#2e3192] flex items-center overflow-hidden">
         {/* Background decorative circles */}
-        <div className="absolute -top-32 -right-32 w-96 h-96 bg-[#2d6a9f]/30 rounded-full blur-3xl" />
+        <div className="absolute -top-32 -right-32 w-96 h-96 bg-[#4547b0]/30 rounded-full blur-3xl" />
         <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-[#e8a020]/20 rounded-full blur-3xl" />
 
         <div className="max-w-6xl mx-auto px-6 py-32 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
           {/* Text */}
           <div>
             <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-4">
-              Print Paper & Thermal Rolls
+              Хартија за печатење и термални ролни
             </p>
             <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Quality Paper,<br />
-              <span className="text-[#e8a020]">Delivered Right.</span>
+              Квалитетна хартија,<br />
+              <span className="text-[#e8a020]">Испорачана навреме.</span>
             </h1>
             <p className="text-white/70 text-lg mb-10 max-w-md leading-relaxed">
-              Vocar Koop is your reliable supplier of premium print paper and thermal rolls.
-              Serving businesses of all sizes with consistent quality since 2005.
+              Воќаркооп Комерц е ваш доверлив добавувач на премиум хартија за печатење и термални ролни.
+              Служиме бизниси од сите големини со постојан квалитет од 2005 година.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 to="/contact"
                 className="bg-[#e8a020] hover:bg-[#c8881a] text-white font-semibold px-8 py-4 rounded-lg transition-colors"
               >
-                Get a Quote
+                Побарај понуда
               </Link>
               <Link
                 to="/about"
                 className="border-2 border-white/40 hover:border-white text-white font-semibold px-8 py-4 rounded-lg transition-colors"
               >
-                Learn More
+                Дознај повеќе
               </Link>
             </div>
           </div>
 
           {/* Hero image placeholder */}
-          <div className="w-full h-80 lg:h-[420px] rounded-2xl bg-[#2d6a9f]/40 border border-white/10 flex flex-col items-center justify-center gap-3 text-white/50">
+          <div className="w-full h-80 lg:h-[420px] rounded-2xl bg-[#4547b0]/40 border border-white/10 flex flex-col items-center justify-center gap-3 text-white/50">
             <span className="text-6xl">🖨️</span>
-            <span className="text-sm">Hero Image Placeholder</span>
+            <span className="text-sm">Место за главна слика</span>
           </div>
         </div>
       </section>
@@ -96,10 +96,10 @@ export default function Home() {
       {/* Products */}
       <section className="py-24 bg-[#f5f7fa]">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Our Products</p>
-          <h2 className="text-4xl font-bold text-[#1a3a5c] mb-4">What We Supply</h2>
+          <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Нашите производи</p>
+          <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Што нудиме</h2>
           <p className="text-[#5a6472] text-lg mb-14 max-w-xl">
-            From high-volume thermal rolls to premium print paper, we carry everything your business needs.
+            Од термални ролни до премиум хартија за печатење, имаме сè што му е потребно на вашиот бизнис.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -109,7 +109,7 @@ export default function Home() {
                 className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-[#e8ecf0]"
               >
                 <div className="text-4xl mb-4">{p.icon}</div>
-                <h3 className="text-lg font-bold text-[#1a3a5c] mb-2">{p.name}</h3>
+                <h3 className="text-lg font-bold text-[#2e3192] mb-2">{p.name}</h3>
                 <p className="text-[#5a6472] text-sm leading-relaxed">{p.desc}</p>
               </div>
             ))}
@@ -118,9 +118,9 @@ export default function Home() {
           <div className="mt-10 text-center">
             <Link
               to="/contact"
-              className="bg-[#1a3a5c] hover:bg-[#2d6a9f] text-white font-semibold px-8 py-4 rounded-lg inline-block transition-colors"
+              className="bg-[#2e3192] hover:bg-[#4547b0] text-white font-semibold px-8 py-4 rounded-lg inline-block transition-colors"
             >
-              Request Pricing
+              Побарај цена
             </Link>
           </div>
         </div>
@@ -129,14 +129,14 @@ export default function Home() {
       {/* Product showcase images */}
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Gallery</p>
-          <h2 className="text-4xl font-bold text-[#1a3a5c] mb-14">Our Products Up Close</h2>
+          <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Галерија</p>
+          <h2 className="text-4xl font-bold text-[#2e3192] mb-14">Нашите производи изблизу</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { label: 'Thermal Roll Varieties', emoji: '🧻' },
-              { label: 'Print Paper Stock', emoji: '📦' },
-              { label: 'Packaging & Delivery', emoji: '🚚' },
+              { label: 'Видови термални ролни', emoji: '🧻' },
+              { label: 'Залиха хартија за печатење', emoji: '📦' },
+              { label: 'Пакување и испорака', emoji: '🚚' },
             ].map((item) => (
               <div
                 key={item.label}
@@ -156,39 +156,39 @@ export default function Home() {
           {/* Image placeholder */}
           <div className="h-80 rounded-2xl bg-gradient-to-br from-[#e8ecf0] to-[#d0d8e4] flex flex-col items-center justify-center gap-3 text-[#5a6472] order-2 lg:order-1">
             <span className="text-5xl">🏭</span>
-            <span className="text-sm font-medium">Company / Warehouse Photo</span>
+            <span className="text-sm font-medium">Фотографија на компанијата / магацин</span>
           </div>
 
           {/* Text */}
           <div className="order-1 lg:order-2">
-            <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Our Story</p>
-            <h2 className="text-4xl font-bold text-[#1a3a5c] mb-6">Two Decades of Print Excellence</h2>
+            <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Нашата приказна</p>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-6">Две децении извонредност во печатење</h2>
             <p className="text-[#5a6472] leading-relaxed mb-4">
-              Founded in 2005, Vocar Koop started as a small local paper distributor with a simple goal:
-              deliver quality products on time, every time. Over the years, we have grown into a trusted
-              regional supplier serving hundreds of businesses across retail, hospitality, healthcare, and
-              corporate sectors.
+              Основан во 2005 година, Воќаркооп Комерц започна како мал локален дистрибутер на хартија со едноставна цел:
+              да испорача квалитетни производи навреме, секогаш. Со текот на годините, пораснавме во доверлив
+              регионален добавувач кој служи стотици бизниси во малопродажба, угостителство, здравство и
+              корпоративниот сектор.
             </p>
             <p className="text-[#5a6472] leading-relaxed mb-8">
-              Our team's deep expertise in paper products allows us to help clients find exactly the
-              right solution — whether that's a specific GSM weight, roll core size, or paper coating.
+              Длабокото познавање на хартиените производи на нашиот тим ни овозможува да им помогнеме на клиентите
+              да го пронајдат точното решение — без разлика дали е тоа специфична GSM тежина, големина на јадро или облога на хартија.
             </p>
             <Link
               to="/about"
-              className="text-[#1a3a5c] font-semibold border-b-2 border-[#e8a020] pb-0.5 hover:text-[#e8a020] transition-colors"
+              className="text-[#2e3192] font-semibold border-b-2 border-[#e8a020] pb-0.5 hover:text-[#e8a020] transition-colors"
             >
-              Read Our Full Story →
+              Прочитај ја нашата целосна приказна →
             </Link>
           </div>
         </div>
       </section>
 
       {/* Quick contact CTA */}
-      <section className="py-20 bg-[#1a3a5c]">
+      <section className="py-20 bg-[#2e3192]">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold text-white mb-4">Ready to Order?</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Подготвени да нарачате?</h2>
           <p className="text-white/70 text-lg mb-10">
-            Contact us today for bulk pricing, custom orders, or any questions about our products.
+            Контактирајте не денес за цени на големо, прилагодени нарачки или прашања за нашите производи.
           </p>
           <div className="flex flex-wrap justify-center gap-6 mb-10">
             <div className="flex items-center gap-3 text-white/80">
@@ -204,7 +204,7 @@ export default function Home() {
             to="/contact"
             className="bg-[#e8a020] hover:bg-[#c8881a] text-white font-semibold px-10 py-4 rounded-lg inline-block transition-colors"
           >
-            Get in Touch
+            Контактирај не
           </Link>
         </div>
       </section>
