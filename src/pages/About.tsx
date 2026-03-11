@@ -125,10 +125,8 @@ export default function About() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: 'John Vocar', role: 'Основач и извршен директор' },
-              { name: 'Maria Stojanovic', role: 'Раководител на продажба' },
-              { name: 'Peter Kolar', role: 'Менаџер на логистика' },
-              { name: 'Ana Petrovic', role: 'Односи со клиенти' },
+              { name: 'Biljana Karajanovska', role: 'Основач и извршен директор' },
+              { name: 'Hristijan Risteski', role: 'Раководител на продажба' },
             ].map((person) => (
               <div key={person.name} className="text-center">
                 <div className="w-28 h-28 rounded-full bg-gradient-to-br from-[#e8ecf0] to-[#d0d8e4] flex items-center justify-center text-4xl mx-auto mb-4">
