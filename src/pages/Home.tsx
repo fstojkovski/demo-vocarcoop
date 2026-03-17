@@ -6,32 +6,26 @@ const products = [
     id: 1,
     name: 'Термални ролни',
     desc: 'Висококвалитетни термални хартиени ролни за POS системи, банкомати, сметки и уште. Достапни во сите стандардни ширини.',
-    icon: '🧻',
+    image: '/product-galery/thermal_roll.jpg',
   },
   {
     id: 2,
-    name: 'Офсет хартија за печатење',
-    desc: 'Премиум офсет хартија за професионално печатење. Одлична репродукција на бои и мазна завршна обработка.',
-    icon: '📄',
+    name: 'Фотокопирна хартија',
+    desc: 'Повеќенаменска хартија за секојдневна канцелариска употреба. Постојана осветленост и работа без заглавување.',
+    image: '/product-galery/printingpaper.png',
   },
   {
     id: 3,
-    name: 'Хартија за копирање',
-    desc: 'Повеќенаменска хартија за секојдневна канцелариска употреба. Постојана осветленост и работа без заглавување.',
-    icon: '📋',
-  },
-  {
-    id: 4,
     name: 'Специјални ролни',
     desc: 'Термални ролни со прилагодена ширина за медицински, индустриски и апликации за печатење на налепници.',
-    icon: '🔖',
+    image: '/product-galery/atm_full.jpg',
   },
 ]
 
 const stats = [
-  { value: '20+', label: 'Години искуство' },
-  { value: '500+', label: 'Задоволни клиенти' },
-  { value: '50+', label: 'Варијанти на производи' },
+  { value: '30+', label: 'Години искуство' },
+  { value: '200+', label: 'Задоволни клиенти' },
+  { value: '30+', label: 'Варијанти на производи' },
   { value: '99%', label: 'Навремена испорака' },
 ]
 
@@ -48,7 +42,7 @@ export default function Home() {
           {/* Text */}
           <div>
             <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-4">
-              Хартија за печатење и термални ролни
+              Фотокопирна хартија и термални ролни
             </p>
             <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Квалитетна хартија,<br />
@@ -56,7 +50,7 @@ export default function Home() {
             </h1>
             <p className="text-white/70 text-lg mb-10 max-w-md leading-relaxed">
               Воќаркооп Комерц е ваш доверлив добавувач на премиум хартија за печатење и термални ролни.
-              Служиме бизниси од сите големини со постојан квалитет од 2005 година.
+              Служиме бизниси од сите големини со постојан квалитет од 1992 година.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -92,7 +86,7 @@ export default function Home() {
       </section>
 
       {/* Products */}
-      <section className="py-24 bg-[#f5f7fa]">
+      <section className="py-12 bg-[#f5f7fa]">
         <div className="max-w-6xl mx-auto px-6">
           <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Нашите производи</p>
           <h2 className="text-4xl font-bold text-[#2e3192] mb-4">Што нудиме</h2>
@@ -106,7 +100,9 @@ export default function Home() {
                 key={p.id}
                 className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-[#e8ecf0]"
               >
-                <div className="text-4xl mb-4">{p.icon}</div>
+                <div className="mb-4 rounded-lg overflow-hidden h-52">
+                  <img src={p.image} alt={p.name} className="w-full h-full object-cover" />
+                </div>
                 <h3 className="text-lg font-bold text-[#2e3192] mb-2">{p.name}</h3>
                 <p className="text-[#5a6472] text-sm leading-relaxed">{p.desc}</p>
               </div>
@@ -124,52 +120,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Product showcase images */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Галерија</p>
-          <h2 className="text-4xl font-bold text-[#2e3192] mb-14">Нашите производи изблизу</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { label: 'Видови термални ролни', emoji: '🧻' },
-              { label: 'Залиха хартија за печатење', emoji: '📦' },
-              { label: 'Пакување и испорака', emoji: '🚚' },
-            ].map((item) => (
-              <div
-                key={item.label}
-                className="h-64 rounded-2xl bg-gradient-to-br from-[#e8ecf0] to-[#d0d8e4] flex flex-col items-center justify-center gap-3 text-[#5a6472]"
-              >
-                <span className="text-5xl">{item.emoji}</span>
-                <span className="text-sm font-medium">{item.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* History / About snippet */}
-      <section className="py-24 bg-[#f5f7fa]">
+      <section className="py-12 bg-[#f5f7fa]">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Image placeholder */}
-          <div className="h-80 rounded-2xl bg-gradient-to-br from-[#e8ecf0] to-[#d0d8e4] flex flex-col items-center justify-center gap-3 text-[#5a6472] order-2 lg:order-1">
-            <span className="text-5xl">🏭</span>
-            <span className="text-sm font-medium">Фотографија на компанијата / магацин</span>
+          <div className="h-80 rounded-2xl overflow-hidden order-2 lg:order-1">
+            <img src="/warehouse.png" alt="Магацин на Воќаркооп Комерц" className="w-full h-full object-cover" />
           </div>
 
           {/* Text */}
           <div className="order-1 lg:order-2">
             <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Нашата приказна</p>
-            <h2 className="text-4xl font-bold text-[#2e3192] mb-6">Две децении извонредност во печатење</h2>
+            <h2 className="text-4xl font-bold text-[#2e3192] mb-6">Три децении извонредност во печатење</h2>
             <p className="text-[#5a6472] leading-relaxed mb-4">
-              Основан во 2005 година, Воќаркооп Комерц започна како мал локален дистрибутер на хартија со едноставна цел:
+              Основана во 1992 година, Воќаркооп Комерц започна како мал локален дистрибутер на хартија со едноставна цел:
               да испорача квалитетни производи навреме, секогаш. Со текот на годините, пораснавме во доверлив
               регионален добавувач кој служи стотици бизниси во малопродажба, угостителство, здравство и
               корпоративниот сектор.
-            </p>
-            <p className="text-[#5a6472] leading-relaxed mb-8">
-              Длабокото познавање на хартиените производи на нашиот тим ни овозможува да им помогнеме на клиентите
-              да го пронајдат точното решение — без разлика дали е тоа специфична GSM тежина, големина на јадро или облога на хартија.
             </p>
             <Link
               to="/about"
@@ -191,11 +158,19 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-6 mb-10">
             <div className="flex items-center gap-3 text-white/80">
               <span className="text-2xl">📞</span>
-              <span>+1 (555) 123-4567</span>
+              <a href="tel:+38923127109">+389 23 127 109</a>
+            </div>
+            <div className="flex items-center gap-3 text-white/80">
+              <span className="text-2xl">📞</span>
+              <a href="tel:+38970380220">+389 70 380 220</a>
             </div>
             <div className="flex items-center gap-3 text-white/80">
               <span className="text-2xl">✉️</span>
-              <span>info@vocarkoop.com</span>
+              <a href="mailto:vocarcoop@gmail.com">vocarcoop@gmail.com</a>
+            </div>
+            <div className="flex items-center gap-3 text-white/80">
+              <span className="text-2xl">📍</span>
+              <span>Ул."519" бр.38, Автокоманда, 1000 Скопје</span>
             </div>
           </div>
           <Link
