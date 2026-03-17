@@ -5,7 +5,6 @@ const carouselImages = [
   '/homepage-carousel/image2.jpg',
   '/homepage-carousel/image3.png',
   '/homepage-carousel/image4.png',
-  '/homepage-carousel/image5.png',
 ]
 
 export default function HeroCarousel() {
