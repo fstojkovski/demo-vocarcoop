@@ -1,10 +1,9 @@
-import { Link } from 'react-router-dom'
 import logo from '../assets/logo.svg'
 
 export default function Footer() {
   return (
     <footer className="bg-[#2e3192] text-white/80">
-      <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Brand */}
         <div>
           <div className="mb-4">
@@ -13,16 +12,6 @@ export default function Footer() {
           <p className="text-sm leading-relaxed">
             Ваш доверлив партнер за фотокопирна хартија и термални ролни. Квалитет и доверливост од 1992 година.
           </p>
-        </div>
-
-        {/* Quick links */}
-        <div>
-          <h4 className="text-white font-semibold mb-4">Брзи линкови</h4>
-          <ul className="flex flex-col gap-2 text-sm">
-            <li><Link to="/" className="hover:text-[#e8a020] transition-colors">Почетна</Link></li>
-            <li><Link to="/about" className="hover:text-[#e8a020] transition-colors">За нас</Link></li>
-            <li><Link to="/contact" className="hover:text-[#e8a020] transition-colors">Контакт и понуди</Link></li>
-          </ul>
         </div>
 
         {/* Contact */}
