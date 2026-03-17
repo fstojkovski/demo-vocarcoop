@@ -1,19 +1,11 @@
-const milestones = [
-  { year: '1992', title: 'Основање на компанијата', desc: 'Воќаркооп Комерц ги отвора вратите како локален дистрибутер на хартија, опслужувајќи ја непосредната околина.' },
-  { year: '2009', title: 'Проширен асортиман', desc: 'Додадени термални ролни и специјални хартии за да се задоволи растечката побарувачка од малопродажните клиенти.' },
-  { year: '2013', title: 'Регионален лидер', desc: 'Станавме водечки добавувач на хартија во регионот, со партнерства со главни малопродажни синџири.' },
-  { year: '2017', title: 'Проширување на магацинот', desc: 'Отворен нов магацин од 500 м² за поддршка на зголемените залихи и побрза испорака.' },
-  { year: '2021', title: 'Лансирање на дигитално нарачување', desc: 'Лансиран систем за онлајн нарачување и понуди за полесен пристап на клиентите.' },
-  { year: '2025', title: '20 години силни', desc: 'Прославуваме две децении квалитет и доверливост со 500+ активни клиенти.' },
-]
 
 const values = [
-  { icon: '✅', title: 'Квалитетот прво', desc: 'Секој производ кој го испорачуваме ги исполнува строгите стандарди за квалитет. Работиме само со сертифицирани производители.' },
+  { icon: '✅', title: 'Квалитетот на прво место', desc: 'Секој производ кој го испорачуваме ги исполнува строгите стандарди за квалитет. Работиме само со сертифицирани производители.' },
   { icon: '🤝', title: 'Доверливи партнерства', desc: 'Градиме долгорочни односи засновани на доверба, транспарентност и доследни перформанси.' },
   { icon: '⚡', title: 'Брза испорака', desc: 'Нашата логистичка мрежа обезбедува навремена испорака, без разлика дали ви треба една кутија или цела палета.' },
   { icon: '💡', title: 'Стручна насока', desc: 'Нашиот тим ви помага да го пронајдете вистинскиот производ за вашите специфични барања за печатење.' },
   { icon: '♻️', title: 'Одржливост', desc: 'Приоритизираме еко-пријателско снабдување со хартија и работиме со добавувачи посветени на одржливо шумарство.' },
-  { icon: '📊', title: 'Конкурентни цени', desc: 'Цени засновани на волумен и флексибилни опции за нарачување дизајнирани да одговараат на вашиот буџет.' },
+  { icon: '📊', title: 'Конкурентни цени', desc: 'Цени засновани на волумен и флексибилни опции за нарачување, дизајнирани да одговараат на вашиот буџет.' },
 ]
 
 export default function About() {
@@ -32,10 +24,6 @@ export default function About() {
               Повеќе од три децении, Воќаркооп Комерц е прв избор за бизниси кои имаат потреба од
               доверливи, висококвалитетни хартиени производи. Нашата посветеност на извонредност не се изменила од самиот почеток.
             </p>
-          </div>
-          <div className="h-72 rounded-2xl bg-[#4547b0]/40 border border-white/10 flex flex-col items-center justify-center gap-3 text-white/50">
-            <span className="text-6xl">🏢</span>
-            <span className="text-sm">Место за фотографија на компанијата / тимот</span>
           </div>
         </div>
       </section>
@@ -60,15 +48,11 @@ export default function About() {
               да преговарате за цени на волумен или да решите итен проблем со снабдување.
             </p>
           </div>
-          <div className="h-80 rounded-2xl bg-gradient-to-br from-[#e8ecf0] to-[#d0d8e4] flex flex-col items-center justify-center gap-3 text-[#5a6472]">
-            <span className="text-5xl">🎯</span>
-            <span className="text-sm font-medium">Место за фотографија на мисија / канцеларија</span>
-          </div>
         </div>
       </section>
 
       {/* Values */}
-      <section className="py-24 bg-[#f5f7fa]">
+      <section className="py-12 bg-[#f5f7fa]">
         <div className="max-w-6xl mx-auto px-6">
           <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Што застапуваме</p>
           <h2 className="text-4xl font-bold text-[#2e3192] mb-14">Нашите основни вредности</h2>
@@ -85,57 +69,45 @@ export default function About() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3 text-center">Историја</p>
-          <h2 className="text-4xl font-bold text-[#2e3192] mb-16 text-center">Нашето патување</h2>
 
-          <div className="relative">
-            {/* Vertical line */}
-            <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-[#e8ecf0] -translate-x-1/2" />
-
-            <div className="flex flex-col gap-10">
-              {milestones.map((m, i) => (
-                <div
-                  key={m.year}
-                  className={`relative flex items-start gap-6 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
-                >
-                  {/* Dot */}
-                  <div className="absolute left-6 md:left-1/2 w-4 h-4 rounded-full bg-[#e8a020] -translate-x-1/2 mt-1.5 z-10" />
-
-                  {/* Content */}
-                  <div className={`ml-14 md:ml-0 md:w-5/12 bg-[#f5f7fa] rounded-xl p-5 border border-[#e8ecf0] ${i % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'}`}>
-                    <div className="text-[#e8a020] font-bold text-sm mb-1">{m.year}</div>
-                    <h3 className="text-[#2e3192] font-bold text-base mb-2">{m.title}</h3>
-                    <p className="text-[#5a6472] text-sm leading-relaxed">{m.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Team placeholder */}
-      <section className="py-24 bg-[#f5f7fa]">
+{/* Leadership */}
+      <section className="py-12 bg-[#f5f7fa]">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Луѓето</p>
-          <h2 className="text-4xl font-bold text-[#2e3192] mb-14">Запознај го нашиот тим</h2>
+          <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Раководство</p>
+          <h2 className="text-4xl font-bold text-[#2e3192] mb-14">Луѓето зад компанијата</h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { name: 'Biljana Karajanovska', role: 'Основач и извршен директор' },
-              { name: 'Hristijan Risteski', role: 'Раководител на продажба' },
-            ].map((person) => (
-              <div key={person.name} className="text-center">
-                <div className="w-28 h-28 rounded-full bg-gradient-to-br from-[#e8ecf0] to-[#d0d8e4] flex items-center justify-center text-4xl mx-auto mb-4">
-                  👤
-                </div>
-                <h3 className="font-bold text-[#2e3192]">{person.name}</h3>
-                <p className="text-[#5a6472] text-sm mt-1">{person.role}</p>
+          <div className="flex flex-col sm:flex-row gap-10 justify-center items-start">
+
+            {/* Founder — In Memoriam */}
+            <div className="flex flex-col items-center text-center max-w-xs">
+              <div className="w-40 h-40 rounded-full border-4 border-[#2e3192]/20 mx-auto mb-5 overflow-hidden">
+                <img src="/pavleristov.jpeg" alt="Павле Ристов" className="w-full h-full object-cover" />
               </div>
-            ))}
+              <div className="inline-block bg-[#2e3192]/10 text-[#2e3192] text-xs font-semibold px-3 py-1 rounded-full mb-3 tracking-wide uppercase">
+                In Memoriam
+              </div>
+              <h3 className="font-bold text-[#2e3192] text-xl">Павле Ристов</h3>
+              <p className="text-[#e8a020] text-sm font-semibold mt-1">Основач</p>
+              <p className="text-[#5a6472] text-sm mt-3 leading-relaxed">
+                Визионерот кој ја основа Воќаркооп Комерц во 1992 година и ги постави темелите на компанијата врз вредностите на квалитет, доверба и посветеност.
+              </p>
+            </div>
+
+            {/* Current CEO */}
+            <div className="flex flex-col items-center text-center max-w-xs">
+              <div className="w-40 h-40 rounded-full bg-[#2e3192] flex items-center justify-center mx-auto mb-5">
+                <span className="text-5xl font-bold text-white/60">БК</span>
+              </div>
+              <div className="inline-block bg-[#e8a020]/15 text-[#e8a020] text-xs font-semibold px-3 py-1 rounded-full mb-3 tracking-wide uppercase">
+                Извршен директор
+              </div>
+              <h3 className="font-bold text-[#2e3192] text-xl">Билјана Карајановска</h3>
+              <p className="text-[#5a6472] text-sm font-semibold mt-1">Извршен директор</p>
+              <p className="text-[#5a6472] text-sm mt-3 leading-relaxed">
+                Билјана го продолжува наследството на основачот водејќи ја компанијата со истата посветеност кон квалитетот и долгорочните партнерства.
+              </p>
+            </div>
+
           </div>
         </div>
       </section>
