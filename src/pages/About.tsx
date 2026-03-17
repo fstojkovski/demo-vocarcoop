@@ -13,49 +13,77 @@ export default function About() {
     <>
       {/* Hero */}
       <section className="bg-[#2e3192] pt-32 pb-20">
-        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-4">За нас</p>
-            <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
-              Страст за хартија,<br />
-              <span className="text-[#e8a020]">Изградена на доверба.</span>
-            </h1>
-            <p className="text-white/70 text-lg leading-relaxed">
-              Повеќе од три децении, Воќаркооп Комерц е прв избор за бизниси кои имаат потреба од
-              доверливи, висококвалитетни хартиени производи. Нашата посветеност на извонредност не се изменила од самиот почеток.
-            </p>
-          </div>
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-4">За нас</p>
+          <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
+            Страст за хартија,<br />
+            <span className="text-[#e8a020]">Изградена на доверба.</span>
+          </h1>
+          <p className="text-white/70 text-lg leading-relaxed">
+            Повеќе од три децении, Воќаркооп Комерц е прв избор за бизниси кои имаат потреба од
+            доверливи, висококвалитетни хартиени производи. Нашата посветеност на извонредност не се изменила од самиот почеток.
+          </p>
         </div>
       </section>
 
       {/* Mission */}
       <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Нашата мисија</p>
-            <h2 className="text-4xl font-bold text-[#2e3192] mb-6">Снабдуваме квалитет, овозможуваме бизнис</h2>
-            <p className="text-[#5a6472] leading-relaxed mb-4">
-              Нашата мисија е едноставна: да им обезбедиме на бизнисите највисококвалитетна хартија за печатење
-              и термални ролни по конкурентни цени, поддржани со исклучителна услуга и стручни совети.
-            </p>
-            <p className="text-[#5a6472] leading-relaxed mb-4">
-              Разбираме дека доверливото снабдување со хартија е критично за секојдневното работење — од сметки до извештаи,
-              од пакување до публикации. Затоа одржуваме длабоки нивоа на залихи и повеќе партнерски односи со добавувачи
-              за да се осигураме дека никогаш нема да останете без залиха.
-            </p>
-            <p className="text-[#5a6472] leading-relaxed">
-              Нашиот посветен продажен тим е секогаш достапен за да ви помогне да го пронајдете вистинскиот производ,
-              да преговарате за цени на волумен или да решите итен проблем со снабдување.
-            </p>
-          </div>
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Нашата мисија</p>
+          <h2 className="text-4xl font-bold text-[#2e3192] mb-6">Снабдуваме квалитет, овозможуваме бизнис</h2>
+          <p className="text-[#5a6472] leading-relaxed mb-4">
+            Нашата мисија е едноставна: да им обезбедиме на бизнисите највисококвалитетна хартија за печатење
+            и термални ролни по конкурентни цени, поддржани со исклучителна услуга и стручни совети.
+          </p>
+          <p className="text-[#5a6472] leading-relaxed mb-4">
+            Разбираме дека доверливото снабдување со хартија е критично за секојдневното работење — од сметки до извештаи,
+            од пакување до публикации. Затоа одржуваме длабоки нивоа на залихи и повеќе партнерски односи со добавувачи
+            за да се осигураме дека никогаш нема да останете без залиха.
+          </p>
+          <p className="text-[#5a6472] leading-relaxed">
+            Нашиот посветен продажен тим е секогаш достапен за да ви помогне да го пронајдете вистинскиот производ,
+            да преговарате за цени на волумен или да решите итен проблем со снабдување.
+          </p>
+        </div>
+      </section>
+
+      {/* Sylvamo Exclusive Distributor */}
+      <section className="py-24 bg-[#f5f7fa]">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Ексклузивна дистрибуција</p>
+          <h2 className="text-4xl font-bold text-[#2e3192] mb-8">Единствен официјален увозник на Sylvamo</h2>
+
+          {/* Sylvamo logo lockup */}
+          <a
+            href="https://www.sylvamo.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-4 bg-white border-2 border-[#6638b5]/20 hover:border-[#6638b5]/50 rounded-2xl px-8 py-5 mb-10 transition-colors group"
+          >
+            <img src="/sylvamo-favicon.png" alt="Sylvamo" className="w-12 h-12 object-contain" />
+            <span className="text-3xl font-bold tracking-tight" style={{ color: '#6638b5' }}>Sylvamo</span>
+            <svg className="w-4 h-4 ml-1 opacity-40 group-hover:opacity-70 transition-opacity" style={{ color: '#6638b5' }} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+
+          <p className="text-[#5a6472] text-lg leading-relaxed mb-4">
+            Воќаркооп Комерц е <strong className="text-[#2e3192]">единствената компанија во Македонија и во регионот</strong> која е официјален дистрибутер и увозник на производите на{' '}
+            <a href="https://www.sylvamo.com" target="_blank" rel="noopener noreferrer" className="text-[#6638b5] font-semibold hover:underline">
+              Sylvamo
+            </a>.
+          </p>
+          <p className="text-[#5a6472] text-lg leading-relaxed">
+            Sylvamo е еден од водечките светски производители на хартија, чии производи се препознатливи и почитувани на сите пазари. Преку нашата ексклузивна соработка, ги носиме нивните висококвалитетни хартиени решенија директно до бизнисите во земјата и пошироко.
+          </p>
         </div>
       </section>
 
       {/* Values */}
       <section className="py-12 bg-[#f5f7fa]">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Што застапуваме</p>
-          <h2 className="text-4xl font-bold text-[#2e3192] mb-14">Нашите основни вредности</h2>
+          <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3 text-center">Што застапуваме</p>
+          <h2 className="text-4xl font-bold text-[#2e3192] mb-14 text-center">Нашите основни вредности</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {values.map((v) => (
@@ -73,8 +101,8 @@ export default function About() {
 {/* Leadership */}
       <section className="py-12 bg-[#f5f7fa]">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3">Раководство</p>
-          <h2 className="text-4xl font-bold text-[#2e3192] mb-14">Луѓето зад компанијата</h2>
+          <p className="text-[#e8a020] font-semibold tracking-widest text-sm uppercase mb-3 text-center">Раководство</p>
+          <h2 className="text-4xl font-bold text-[#2e3192] mb-14 text-center">Луѓето зад компанијата</h2>
 
           <div className="flex flex-col sm:flex-row gap-10 justify-center items-start">
 

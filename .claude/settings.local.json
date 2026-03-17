@@ -8,7 +8,9 @@
       "Bash(curl -s \"https://vocarcoop.com\" | grep -o 'src=\"[^\"]*[Ll]ogo[^\"]*\"' | head -20; echo \"---\"; curl -s \"https://vocarcoop.com\" | grep -o '<svg[^>]*>.\\\\{0,2000\\\\}' | head -c 3000)",
       "Bash(curl -s \"https://vocarcoop.com\" | grep -i \"logo\\\\|svg\\\\|Untitled\" | head -30)",
       "Bash(curl -sL \"https://vocarcoop.com\" 2>/dev/null | python3 -c \"\nimport sys\ncontent = sys.stdin.read\\(\\)\n# Find SVG\nidx = content.find\\('<svg'\\)\nif idx >= 0:\n    print\\('SVG found at:', idx\\)\n    print\\(content[idx:idx+3000]\\)\nelse:\n    print\\('No SVG found'\\)\n    # Look for img tags\n    import re\n    imgs = re.findall\\(r'<img[^>]+>', content\\)\n    for img in imgs[:10]:\n        print\\(img\\)\n\")",
-      "Bash(find /Users/filipstojkovski/Code/Personal/vocarkoop/vocarkoop/src -name \"*.tsx\" | xargs sed -i '' 's/#1a3a5c/#2e3192/g; s/#2d6a9f/#4547b0/g')"
+      "Bash(find /Users/filipstojkovski/Code/Personal/vocarkoop/vocarkoop/src -name \"*.tsx\" | xargs sed -i '' 's/#1a3a5c/#2e3192/g; s/#2d6a9f/#4547b0/g')",
+      "WebFetch(domain:www.sylvamo.com)",
+      "WebFetch(domain:assets.sylvamo.com)"
     ]
   }
 }
