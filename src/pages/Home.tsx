@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import HeroCarousel from '../components/HeroCarousel'
 
 const products = [
   {
@@ -73,11 +74,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero image placeholder */}
-          <div className="w-full h-80 lg:h-[420px] rounded-2xl bg-[#4547b0]/40 border border-white/10 flex flex-col items-center justify-center gap-3 text-white/50">
-            <span className="text-6xl">🖨️</span>
-            <span className="text-sm">Место за главна слика</span>
-          </div>
+          {/* Hero carousel */}
+          <HeroCarousel />
         </div>
       </section>
 
